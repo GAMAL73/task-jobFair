@@ -1,0 +1,77 @@
+.vip:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #ffbf00 , 5px 0 0 #ffbf00;
+    transition-delay:0s , 0.5s , 1s , 1s;
+}
+.vip::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #ffbf00;
+    box-shadow: -5px -8px 0 #ffbf00, -5px 8px 0 #ffbf00;
+    transition: width .5s, right .5s, hight .5s, box-shadow 0.5s;
+    transition-delay: 1s , 0.5s , 0s , 0s;
+}
+.vip{
+    position: relative;
+    background-color: transparent;
+    display: inline-block;
+    padding: 15px 30px;
+    outline: none;
+    border: 2px solid #ffbf00;
+    margin: 40px;
+    width: 140px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    -webkit-box-reflect: below 0px
+    linear-gradient(transparent,#0002);
+    transition: .45s;
+    transition-delay: 0s;
+}
+.vip:hover::after{
+    width: 60%;
+    height: 102%;
+    right:-2px;
+    box-shadow: -5px 0 0 #ffbf00,-5px 0 0 #ffbf00;
+    transition-delay:0s , 0.5s , 1s , 1s ;
+}
+.vip:hover{
+    transition-delay: 1.5s;
+    color: #000000;
+    box-shadow: 0 0 10px #ffbf00,
+                0 0 20px #ffbf00,
+                0 0 40px #ffbf00,
+                0 0 80px #ffbf00,
+                0 0 100px #ffbf00
+    ;
+}
+.vip span{
+    position: relative;
+    z-index: 100;
+}
+.vip::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #ffbf00;
+    box-shadow: 5px -8px 0 #ffbf00,5px 8px 0 #ffbf00;
+    transition: width .5s , left .5s , hight .5s ,box-shadow 0.5s;
+    transition-delay: 1s,0.5s,0s,0s;
+}
+body{
+    color: #ffbf00 !important;
+}
